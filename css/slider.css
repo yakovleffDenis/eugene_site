@@ -1,0 +1,42 @@
+#slider_block{width:870px;height:250px;background:#1e1e1e;border-top:1px solid #ff0000;}
+#slider{width:780px;padding:10px 0 0 5px;margin:0;overflow:hidden;position:relative;}
+#slider_left{float:left}
+#slider_right{float:right}
+a#slider_left,a#slider_right{display:block;margin:60px 0 0;}
+#slider_left img, #slider_right img{width:35px;height:85px}
+a#slider_left{background:url("../img/left_right.png")}
+a#slider_right{background:url("../img/left_right.png") 0 -87px}
+a#slider_left:hover{background:url("../img/left_right.png") -37px 0}
+a#slider_right:hover{background:url("../img/left_right.png") -37px -87px}
+a#slider_left:active{background:url("../img/left_right.png") -74px 0}
+a#slider_right:active{background:url("../img/left_right.png") -74px -87px}
+.scroll-panel{width:100%;height:230px;overflow:hidden;}
+#slider .scroll-content{width:4000px;}
+#slider .scroll-content .scroll-content-item{width:180px;height:200px;margin-bottom:10px;float:left;position:relative;}
+#slider .scroll-content .scroll-content-item:hover{background:url("../img/slider_bg.png") no-repeat}
+.scroll-content .hover{background:url("../img/slider_bg.png") no-repeat}
+
+#slider .scroll-bar-wrap{height:18px;padding:1px 0;clear:left;background:url("../img/scroll-bar-wrap_bg.png") repeat-x;position:relative;}
+#scroll-bar-wrap_rbg{background:url("../img/scroll-bar-wrap_rbg.png") no-repeat right}
+#scroll-bar-wrap_lbg{padding:0px 1px;background:url("../img/scroll-bar-wrap_lbg.png") no-repeat left;}
+
+		* html .scroll-content-item{display:inline;} /* IE6 float double margin bug */
+		.scroll-content-item{behavior:url("../js/ie6hover.htc")}
+		.scroll-bar-wrap{clear:left;padding:0 4px 0 2px;margin:0 -1px -1px -1px;}
+		.scroll-bar-wrap .ui-slider{background:none;border:0;height:2em;margin:0 auto;}
+
+.scroll-bar-wrap .ui-handle-helper-parent{width:100%;height:100%;margin:0 auto;position:relative;}
+
+.scroll-bar-wrap .ui-slider-handle .ui-icon{margin:-8px auto 0;top:50%;position:relative;}
+.scroll-bar-wrap .scroll-bar{height:18px;}
+#slider .scroll-bar a{width:130px;height:17px;cursor:move;background:url("../img/scroll_bg.png");position:absolute;}
+#slider .scroll-content a{position:absolute;}
+#slider .scroll-link{width:180px;bottom:0;text-align:center;color:#b7b7b7;text-decoration:none;font-size:90%;}
+.scroll-link span {
+	font-size: 10pt;
+	display: inline-block;
+	display: -moz-inline-box;
+	zoom: 1;
+	//display: inline}
+.scroll-content-item:hover span{background:none !important}
+#slider .scroll-content .scroll-content-item:hover .scroll-link{color:#000}
